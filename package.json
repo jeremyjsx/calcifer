@@ -1,8 +1,11 @@
 {
   "name": "calcifer",
-  "module": "index.ts",
+  "module": "./src/index.ts",
   "type": "module",
   "private": true,
+  "scripts": {
+    "start": "bun run src/index.ts"
+  },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
     "@types/bun": "latest",
@@ -21,6 +24,7 @@
     "typescript": "^5"
   },
   "dependencies": {
-    "discord.js": "^14.25.1"
+    "discord.js": "^14.25.1",
+    "dotenv": "^17.3.1"
   }
 }
