@@ -54,7 +54,7 @@ export default {
 
         try {
             const { text } = await generateText({
-                model: groq(env.GROQ_MODEL_FOR_TESTING),
+                model: groq(env.GROQ_MODEL),
                 messages: [
                     {
                         role: 'system',
