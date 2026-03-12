@@ -3,6 +3,10 @@ export interface EnvConfig {
     PREFIX: string;
     STATUS: string;
     STATUS_TYPE: string;
+    GROQ_API_KEY: string;
+    GROQ_MODEL_FOR_TESTING: string;
+    SOPHIE_ID: string;
+    HOWL_ID: string;
 }
 
 export const env: EnvConfig = {
@@ -10,5 +14,9 @@ export const env: EnvConfig = {
     PREFIX: process.env.PREFIX ?? '!',
     STATUS: process.env.STATUS ?? '',
     STATUS_TYPE: process.env.STATUS_TYPE ?? 'Playing',
+    GROQ_API_KEY: process.env.GROQ_API_KEY ?? '',
+    GROQ_MODEL_FOR_TESTING: process.env.GROQ_MODEL_FOR_TESTING ?? '',
+    SOPHIE_ID: process.env.SOPHIE_ID ?? '',
+    HOWL_ID: process.env.HOWL_ID ?? '',
 };
 
