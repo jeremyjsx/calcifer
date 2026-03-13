@@ -1,4 +1,4 @@
-# Calcifer
+# 🔥 Calcifer
 
 Discord bot with Calcifer's personality from *Howl's Moving Castle*: prefix & slash commands, Groq-powered AI, configurable response language, and TypeScript on Bun.
 
