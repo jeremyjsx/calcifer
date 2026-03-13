@@ -7,10 +7,11 @@ export default {
         'It is used to see the ping of the bot'
     ),
     async execute(
-        client: BotClient,
+        _client: BotClient,
         interaction: ChatInputCommandInteraction,
         _prefix: string
     ) {
-        return interaction.reply(`\`${client.ws.ping}ms\``);
+        const msgLatency = Date.now() - interaction.createdTimestamp;
+        return interaction.reply(`\`${msgLatency}ms\``);
     },
 };
